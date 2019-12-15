@@ -8,18 +8,22 @@ To testdrive the app:
 
 
 In the first console:
+```
 cd backend
 npm install
 npm start
+```
 
 
 In the second console:
+```
 cd frontend
 npm install
 npm install -g @vue/cli
 npm install vue bootstrap-vue bootstrap axios
 npm install sass-loader node-sass --save-dev
 npm run serve
+```
 
 
 Open browser and go to http://localhost:8080/
