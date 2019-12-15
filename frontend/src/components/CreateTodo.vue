@@ -17,7 +17,6 @@
     </div>
 </template>
 <script>
-    import axios from "axios";
     import bus from "./../bus.js";
 
     export default {
@@ -38,6 +37,7 @@
                 this.$http
                     .post("/", todo)
                     .then(response => {
+                        console.log(response);
                         this.clearTodo();
                         this.refreshTodo();
                         this.typing = false;
